@@ -75,12 +75,3 @@ for($i=0; $i < count($array); $i++){
 
 
 
-
-<!-- 
-Snack 4
-Prendere un paragrafo abbastanza lungo, contenente diverse frasi. 
-Prendere il paragrafo e suddividerlo in tanti paragrafi. Ogni punto un nuovo paragrafo.
-
-Snack 5
-Creare un array contenente qualche alunno di un’ipotetica classe. 
-Ogni alunno avrà Nome, Cognome e un array contenente i suoi voti scolastici. Stampare Nome, Cognome e la media dei voti di ogni alunno. -->

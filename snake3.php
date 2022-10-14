@@ -50,7 +50,7 @@ $dates = array_keys($posts);
 
 for($i = 0; $i < count($dates); $i++){
     $currentDate = $dates[$i];
-echo '<h2>' . $dates[$i] .'</h2>';
+echo '<h2>' . $currentDate .'</h2>';
     $currentPost = $posts[$currentDate];
 for($e = 0; $e < count($currentPost); $e++ ){
     $post = $currentPost[$e];
