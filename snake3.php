@@ -46,5 +46,29 @@ $posts = [
     ],
 ];
 
+$dates = array_keys($posts);
+
+for($i = 0; $i < count($dates); $i++){
+    $currentDate = $dates[$i];
+echo '<h2>' . $dates[$i] .'</h2>';
+    $currentPost = $posts[$currentDate];
+for($e = 0; $e < count($currentPost); $e++ ){
+    $post = $currentPost[$e];
+
+    ?>
+
+<div>
+    <p> titolo: <?= $post['title'] ?></p>
+    <p> autore: <?= $post['author'] ?></p>
+    <p> testo: <?= $post['text'] ?></p>
+
+</div>
+
+    <?php
+}
+
+};
+
+
 
 ?>
