@@ -4,43 +4,28 @@ che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocci
 Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” -->
 
 <?php
+
+$name = '';
  if( isset($_GET['name']) ){
     $name = $_GET['name'];
  };
 
-//  echo $name;
-
+$mail = '';
  if( isset($_GET['mail']) ){
     $mail = $_GET['mail'];
  };
 
-//  echo $mail;
-
+$age = '';
  if( isset($_GET['age']) ){
     $age = $_GET['age'];;
  };
 
-//  echo $age;
 
-// $iTisOk = strlen($name) > 3 && strpos($mail, '.') && strpos($mail, '@') && is_numeric($age);
 
-if(strlen($name) > 3){
+if( strlen($name) > 3 && strpos($mail, '.') && strpos($mail, '@') && is_numeric($age)){
     echo 'Accesso Riuscito';
 } else{
     echo 'Accesso Negato';
 }
-
-if(strpos($mail, '.') && strpos($mail, '@')){
-    echo 'Accesso Riuscito';
-} else{
-    echo 'Accesso Negato';
-}
-
-if(is_numeric($age)){
-    echo 'Accesso Riuscito';
-} else{
-    echo 'Accesso Negato';
-}
-
     
 ?>
